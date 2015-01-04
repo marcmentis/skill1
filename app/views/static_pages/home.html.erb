@@ -1,0 +1,107 @@
+<div class="row">
+	<div id="static_pages_lt" class="large-8 columns">
+		<h3>Next Step To Become a NYS <em>Rails</em> Developer.</h3>
+		<div class="panel callout radius">
+			<p>
+				The aim of this 'Skills 1' app is to provide simple examples of functionality using the same gems that will be used when writing Eterprise <em>Rails</em> apps.
+			</p>
+			<p>
+				Using this <em>Skill 1</em> app as a guide, please create two apps of your own. The apps will be simple Key Inventories, and will be called "Key1" and "Key2". After you have completed the "Key1" app eMail Ed Lovell and he will observe your app. Do likewise after "Key2".
+			</p>
+			<p>
+				As you are in different facilities, to continue refining your app-development communication skills, if you have any problems building "Key1" or "Key2" you should create an <em>issue</em> in the <em>Rails-toolkit</em>. Those of you with answers, should use the <em>issues</em> to help those with questions. (I will not be a part of these <em>issues</em> as I need to concentrate on finishing the <em>Rails Service</em> wrapper/git/deployment backend to meet SSDLC standards.)
+			</p>
+			
+		</div>
+		
+		
+		<div class="panel radius">
+			<h4>
+				Some of the skills/gems used to create this app.
+			</h4>
+			<ul>
+				<li><strong>Seeding</strong></li>
+					<p>
+						The <kbd>$ bundle exec rake db:seed</kbd> command seeded the <em>for_selects</em> database with data from <em>/db/ seeds.rb</em>
+					</p>
+				<li><a href="https://github.com/stympy/faker"><strong>Faker</strong></a></li>
+					<p>
+						The <kbd>$ bundle exec rake db:populate</kbd> command populated the <em>patients</em> database with fake patients as determined in <em>/lib/ tasks/ sample_data.rake</em>. 
+					</p>
+					<p>
+						Ryan Bates demonstrates faker in <a href="http://railscasts.com/episodes?utf8=%E2%9C%93&search=faker">RailsCasts #126</a>
+					</p>
+				<li><a href="http://foundation.zurb.com/docs/"><strong>Foundation Zurb</strong></a></li>
+					<p>
+						The <em>Navigation Bar</em>  and all <em>views</em> were styled using Foundation Zurb. As you change the width of your Chrome browser you will see the cool way that the navigation bar changes for desktop, pad, and telephone interfaces. I have not used "mobile first design" in this app - however, watch the references (below) for demonstrations on how to do that.
+						<br /> The <em>ForSelect</em> resource views have been <em>minimally</em> styled using Foundation Zurb to show the initial steps. The <em>Patient</em> resource has been styled to look a little better.
+						<br /> In the stylesheets folder, some global changes were made to <em>foundation_and_overrides.scss</em>. An adjuvant stylesheet called <em>more_foundation.css.scss</em> was added.
+						
+					</p>
+					<p>
+						Ryan Bates demonstrates Foundation Zurb in <a href="http://railscasts.com/episodes/417-foundation">RailsCasts #417</a>. At <em>Pluralsight</em>, in the <em>Javascript</em> section is a <a href="http://www.pluralsight.com/courses/bootstrap-3">bootstrap3</a> course that gives a great overview of how to use a tool very similar to Foundation Zurb, for typography, buttons, icons, navs and navbars, lists, tables, forms and mobile first development etc.
+					</p>
+				<li><a href="https://github.com/activerecord-hackery/ransack"><strong>Ransack</strong></a></li>
+					<p>
+						The Ransack gem is used to provide a search form for each of the <em>For Select</em>, <em>Patients</em> and <em>PatientsComplex</em> tables. I did not put a "Find" button on most of the search forms. Find is executed by pressing the 'return' key, or in the case of 'selects' and 'dates' occurs automatically when the entry is chosen. The <em>For Select</em> and <em>Patients</em> tables are examples of simple Static filters/searches. The <em>Patients Complex</em> form is an example of a Dynamic filter/search, that is, where the attributes of the search are defined dynamically by the end user.
+					</p>
+					<p>
+						Ryan Bates demonstrates ransack in <a href="http://railscasts.com/episodes/370-ransack">RailsCasts #379</a>
+					</p>
+				<li><a href="https://github.com/amatsuda/kaminari"><strong>Kaminari</strong></a></li>
+					<p>
+						The Kaminari gem is used to provide all the pagination functionality found at the bottom of the <em>For Select</em>, <em>Patients</em> and <em>Patients Complex</em> tables.
+						
+					</p>
+					<p>
+						Ryan Bates demonstrates ransack in <a href="http://railscasts.com/episodes/254-pagination-with-kaminari">RailsCasts #254</a>
+					</p>
+				<li><a href="https://github.com/marcmentis/grouped_options"><strong>Grouped_options</strong></a></li>
+					<p>
+						I created the simple Grouped_options gem to generate a two dimensional array for use with Rails helpers such as<kbd>select_tag</kbd> and <kbd>grouped_options_for_select</kbd>. The use case is to place all data for selects for entire application into a database table (i.e., the <em>for_selects</em> table). This gem allows you to extract data from the <em>for_selects</em> table to populate the <kbd>value and text</kbd> select attributes. 
+					</p>
+				<li><a href="http://guides.rubyonrails.org/working_with_javascript_in_rails.html"><strong>Ajax</strong></a></li>
+					<p>
+						The Ajax <em>Patient</em> View was created using Rails' <kbd>'remote'</kbd>  methodology. This methodology consists of a group of Rails helper methods that are used to convert the multiple CRUD views that result from a <kbd>$ rails generate scaffold</kbd> command into a view where all CRUD actions take place on a single page. That is, the method creates a modern, interactive, single Ajax view from the multiple non-javascript views created by the generate scaffold command.
+					</p>
+					<p>
+						Ryan Bates demonstrates the "remote" method in <a href="http://railscasts.com/episodes/136-jquery-ajax-revised">RailsCasts #136</a>
+					</p>
+			</ul>
+		</div>
+		
+	</div>
+	<div class="large-4 columns">
+		<h4 class="subheader"><em>Key1</em> and <em>Key2</em> Apps</h4>
+		<div class="panel radius">
+			<p>
+				<strong>Both <em>Key1</em> and <em>Key2</em> apps:</strong>
+
+				<br /><strong>1.</strong>  Will have a <em>ForSelect</em> and a <em>Key</em> resource. The <em>ForSelect</em> resource should have exactly the same attributes as the "ForSelect" resource in the <em>Skills 1</em> app. The <em>Key</em> resource should have the following attributes: Company:string, Description:text, Number:integer, Checkout:date, Checkin:date. 
+
+				<br /><strong>2.</strong> When creating the apps use <em>Rails 4.0.2</em>. I.e., <kbd>$ rails _4.0.2_ new Key1</kbd>.
+
+				<br /><strong>3.</strong> Set the root of the site to the <em>Keys index</em> page.
+
+				<br /><strong>4.</strong> Seed the <em>for_selects</em> database with several companies grouped by a few states.
+
+				<br /><strong>5.</strong> Populate the <em>keys</em> database with 250 fake keys.
+			</p>
+			<p>
+				<strong>Key1 App:</strong> (old fashioned interface)
+				<br /><strong>1.</strong> Use <em>Foundation Zurb</em> in the same minimal way that it was used for all the <em>ForSelect views</em> in the <em>Skills 1</em> app.
+
+				<br /><strong>2.</strong> Use <em>Ransack</em> and <em>Kaminaro</em> in the same way as they were used on the <em>for_selects</em> index table in the <em>Skills 1</em> app.
+
+				<br /><strong>3.</strong> Use <em>grouped_options</em> in the same way it was used in the <em>_form.html.erb</em> file for the <em>ForSelect</em> resource in the <em>Sills 1</em> app.
+			</p>
+			<p>
+				<strong>Key2 App:</strong> (modern AJAX interface)
+				<br /><strong>1.</strong> Create an AJAX interface for the <em>Key</em> resource to mimic the <em>Patient</em> resource in the <em>Skill 1</em> app.
+
+				<br /><strong>2.</strong> Convert the <em>Key</em> resource files in the same way that the <em>Patient</em> resource files were converted in the <em>Skills 1</em> app. Add the appropriate <em>.js.erb</em> files as dictated by the <em>"remote"</em> Rails methodology.
+			</p>
+		</div>
+		
+	</div>
+</div>
