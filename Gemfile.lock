@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/activerecord-hackery/ransack.git
+  remote: https://github.com/activerecord-hackery/ransack
   revision: d1fc95b3c21c8294e69c70e3995459d11dabfd67
   branch: rails-4
   specs:
@@ -11,7 +11,7 @@ GIT
       polyamorous (~> 1.1)
 
 GIT
-  remote: git@github.com:marcmentis/grouped_options.git
+  remote: https://github.com/marcmentis/grouped_options.git
   revision: 9ae5c6e442ba107ee4c07cbde98c38a5830c49f2
   specs:
     grouped_options (0.0.2)

@@ -1,9 +1,12 @@
 
 development:
   adapter: <%= CONFIG[:adapter] %>
+  host: <%= CONFIG[:host] %>
   database: <%= CONFIG[:database] %>
-  pool: <%= CONFIG[:pool] %>
-  timeout: <%= CONFIG[:timeout] %>
+  username: <%= CONFIG[:username] %>
+  password: <%= CONFIG[:password] %>
+  #pool: <%= CONFIG[:pool] %>
+  #timeout: <%= CONFIG[:timeout] %>
 
 # For Legacy Database
 development_sec: 

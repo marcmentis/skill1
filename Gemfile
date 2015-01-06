@@ -20,11 +20,11 @@ gem 'rails', '4.0.2'
 	end
 
 	# Use Oracle in development i.e., primary or legacy db's
-	# group :development do
-	#   gem "activerecord-oracle_enhanced-adapter", "~> 1.5.0"
-	#   gem 'ruby-oci8', '~> 2.1.0'
-	#   gem 'rspec-rails', '2.13.1'
-	# end
+	 group :development do
+	   gem "activerecord-oracle_enhanced-adapter", "~> 1.5.0"
+	   gem 'ruby-oci8', '~> 2.1.0'
+	   gem 'rspec-rails', '2.13.1'
+	 end
 
 	group :test do
 		gem 'selenium-webdriver', '2.35.1'  # capybara dependency
@@ -78,10 +78,10 @@ gem 'kaminari'
 
 # Add my GroupedOptions gem for Making Grouped Selects from non-associated database
 # gem 'grouped_options', path: '~/projects/gems/grouped_options'
-gem 'grouped_options', git: 'git@github.com:marcmentis/grouped_options.git'
+gem 'grouped_options', git: 'https://github.com/marcmentis/grouped_options.git'
 
 # Form Filter for Table Searches
-gem 'ransack', github: 'activerecord-hackery/ransack', branch: 'rails-4'
+gem 'ransack', git: 'https://github.com/activerecord-hackery/ransack', branch: 'rails-4'
 
 # Authorization
 gem 'pundit', '~> 0.3.0'
