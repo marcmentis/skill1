@@ -20,11 +20,11 @@ gem 'rails', '4.0.2'
 	end
 
 	# Use Oracle in development i.e., primary or legacy db's
-	 group :development do
-	   gem "activerecord-oracle_enhanced-adapter", "~> 1.5.0"
-	   gem 'ruby-oci8', '~> 2.1.0'
-	   gem 'rspec-rails', '2.13.1'
-	 end
+	# group :development do
+	#   gem "activerecord-oracle_enhanced-adapter", "~> 1.5.0"
+	#   gem 'ruby-oci8', '~> 2.1.0'
+	#   gem 'rspec-rails', '2.13.1'
+	# end
 
 	group :test do
 		gem 'selenium-webdriver', '2.35.1'  # capybara dependency

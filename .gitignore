@@ -25,3 +25,6 @@ erd*
 
 # Ignore .DS_Store
 .DS_Store
+
+#ignore Eclipse project file
+.project
