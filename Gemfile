@@ -78,11 +78,10 @@ gem 'kaminari'
 
 # Add my GroupedOptions gem for Making Grouped Selects from non-associated database
 # gem 'grouped_options', path: '~/projects/gems/grouped_options'
-# gem 'grouped_options', git: 'git@github.com:marcmentis/grouped_options.git'
 gem 'grouped_options', git: 'https://github.com/marcmentis/grouped_options.git'
 
 # Form Filter for Table Searches
-# gem 'ransack', github: 'activerecord-hackery/ransack', branch: 'rails-4'
+
 gem 'ransack', git: 'https://github.com/activerecord-hackery/ransack', branch: 'rails-4'
 
 # Authorization

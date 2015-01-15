@@ -19,8 +19,12 @@
 /config/application.yml
 /config/enc_application.yml
 
+
 # Ignore erd files
 erd*
 
 # Ignore .DS_Store
 .DS_Store
+
+#ignore Eclipse project file
+.project
