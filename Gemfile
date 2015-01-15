@@ -81,6 +81,7 @@ gem 'kaminari'
 gem 'grouped_options', git: 'https://github.com/marcmentis/grouped_options.git'
 
 # Form Filter for Table Searches
+
 gem 'ransack', git: 'https://github.com/activerecord-hackery/ransack', branch: 'rails-4'
 
 # Authorization
